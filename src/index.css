@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button:hover {
+  opacity: 0.3;
+}
+  
+main
+{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+.container {
+  position: relative;
+  width: 375px;
+  background: linear-gradient(191.49deg, #1D2671 28.47%, rgba(44, 40, 112, 0.86) 59.47%, rgba(195, 55, 100, 0.87) 100%);
+  overflow-y: hidden;
+}
+
+h1{
+position: absolute;
+left: 32px;
+top:137.5px;
+font-family: "Orbitron";
+font-weight: 500;
+font-size: 75px;
+
+}
+
+h2{
+  position: absolute;
+  position: absolute;
+  width: 337px;
+  height: 70px;
+  left: 62px;
+  top: 99px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 52px;
+
+
+}
+
+h3 {
+  position: absolute;
+  width: 261px;
+  height: 38px;
+  left: 50px;
+  top:68.5px;
+  position: absolute;
+  font-family: "Orbitron";
+  font-weight: 500;
+  font-size: 30px;
+
+}
+
+.blobOne {
+
+}
+
+.blobTwo {
+
+  
+
+}
+
+.glassBackground
+
+{
+  position: absolute;
+  width: 324px; 
+  height: 377px;
+  left: 25px;
+  top: 200.5px;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0.46) 9.95%, rgba(255, 255, 255, 0.28) 109.95%);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 40px;
+}
+
+
+.btn {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  top: 258px;
+  left: 100px;
+}
+
