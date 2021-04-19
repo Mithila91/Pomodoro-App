@@ -26,30 +26,33 @@ export default function Timer() {
 
     function startTimer() {
         setPaused(false);
+        setDisplayMessage(true)
 
     }
     function pauseTimer() {
         setPaused(true);
+        setDisplayMessage(false)
     }
     function resetTimer() {
 
         setPaused(true);
         setSeconds(25 * 60);
+        setDisplayMessage(true)
     }
 
     return (
         <>
 
-            <h3> Time to work</h3>
+            {displayMessage ? <h3> Time to work</h3> : <h3>Break Time</h3>}
             <h1 className="time">
                 {`${Math.floor(seconds / 60)}:${("00" + (seconds % 60)).slice(-2)}`}
             </h1>
             <div className="btn">
 
                 <button onClick={paused ? startTimer : pauseTimer}>
-                    {paused ? <img src={playIcon}></img> : <img src={pauseIcon}></img>}
+                    {paused ? <img src={playIcon} alt="play icon"></img> : <img src={pauseIcon} alt="pause icon"></img>}
                 </button>
-                <button onClick={resetTimer}><img src={reset}></img></button>
+                <button onClick={resetTimer}><img src={reset} alt="reset icon"></img></button>
             </div>
 
         </>
