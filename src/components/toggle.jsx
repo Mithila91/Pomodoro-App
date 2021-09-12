@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import exit from "../blobs/exit.svg";
 
-export default function Toggle() {
+const Toggle = () => {
     const [onToggle, setOnToggle] = useState(false);
 
     function handleClick() {
@@ -19,8 +19,10 @@ export default function Toggle() {
         <div>
 
             <button className="exit" onClick={handleClick}>
-                <img src={exit} alt="exit icon"></img>
+                {/*<img src={exit} alt="exit icon"></img>*/}
             </button>
         </div>
     );
 }
+
+export default Toggle;

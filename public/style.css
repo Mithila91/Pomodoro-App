@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@500&display=swap');
 
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 
-button {
+ button {
   background: none;
 	border: none;
 	font: inherit;
@@ -18,28 +17,22 @@ button:hover {
   opacity: 0.3;
 }
   
-main
+body
 {
-  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
+
 }
 
-.exit {
-position: absolute;
-left: 86.93%;
-right: 5.07%;
-top: 25%;
-bottom: 72.66%;
-}
+
 .container {
   position: relative;
-  width: 375px;
+  width: 100%;
   background: linear-gradient(191.49deg, #1D2671 28.47%, rgba(44, 40, 112, 0.86) 59.47%, rgba(195, 55, 100, 0.87) 100%);
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 h1{
@@ -61,7 +54,6 @@ h2{
   left: 62px;
   top: 99px;
   font-family: "Roboto";
-  font-weight: 500;
   font-size: 52px;
 
 
@@ -75,24 +67,12 @@ h3 {
   top:68.5px;
   position: absolute;
   font-family: "Orbitron";
-  font-weight: 500;
   font-size: 30px;
   text-align: center;
 
 }
 
-.blobOne {
-
-}
-
-.blobTwo {
-
-  
-
-}
-
-.glassBackground
-
+.glass
 {
   position: absolute;
   width: 324px; 
@@ -112,5 +92,4 @@ h3 {
   grid-gap: 50px;
   top: 258px;
   left: 100px;
-}
-
+} 

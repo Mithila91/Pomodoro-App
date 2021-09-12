@@ -6,7 +6,7 @@ import pauseIcon from '../blobs/pause.svg';
 import playIcon from '../blobs/play.svg';
 import reset from '../blobs/reset.svg';
 
-export default function Break() {
+const Break = () => {
     const [seconds, setSeconds] = useState(5 * 60);
     const [paused, setPaused] = useState(true);
 
@@ -22,13 +22,13 @@ export default function Break() {
         };
     }, [paused]);
 
-    function startTimer() {
+    const startTimer = () => {
         setPaused(false);
     }
-    function pauseTimer() {
+    const pauseTimer = () => {
         setPaused(true);
     }
-    function resetTimer() {
+    const resetTimer = () => {
         setPaused(true);
         setSeconds(5 * 60);
     }
@@ -50,3 +50,5 @@ export default function Break() {
         </div>
     );
 }
+
+export default Break;
